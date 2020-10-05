@@ -1,0 +1,12 @@
+C:\Users\saman\Downloads\MilkGear-master\MilkGear\bin\Release\MilkGear.exe.config
+C:\Users\saman\Downloads\MilkGear-master\MilkGear\bin\Release\MilkGear.exe
+C:\Users\saman\Downloads\MilkGear-master\MilkGear\bin\Release\MilkGear.pdb
+C:\Users\saman\Downloads\MilkGear-master\MilkGear\bin\Release\MilkGear.xml
+C:\Users\saman\Downloads\MilkGear-master\MilkGear\obj\Release\MilkGear.FrmMain.resources
+C:\Users\saman\Downloads\MilkGear-master\MilkGear\obj\Release\MilkGear.gdkForm.resources
+C:\Users\saman\Downloads\MilkGear-master\MilkGear\obj\Release\MilkGear.Resources.resources
+C:\Users\saman\Downloads\MilkGear-master\MilkGear\obj\Release\MilkGear.vbproj.GenerateResource.cache
+C:\Users\saman\Downloads\MilkGear-master\MilkGear\obj\Release\MilkGear.vbproj.CoreCompileInputs.cache
+C:\Users\saman\Downloads\MilkGear-master\MilkGear\obj\Release\MilkGear.exe
+C:\Users\saman\Downloads\MilkGear-master\MilkGear\obj\Release\MilkGear.xml
+C:\Users\saman\Downloads\MilkGear-master\MilkGear\obj\Release\MilkGear.pdb

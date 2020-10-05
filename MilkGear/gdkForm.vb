@@ -14,7 +14,7 @@ Public Class gdkForm
     End Function
 #End Region
 
-#Region "API Sombra"
+#Region "API Shadow"
     <DllImport("dwmapi")> _
     Public Shared Function DwmExtendFrameIntoClientArea(ByVal hWnd As IntPtr, ByRef pMarInset As Margins) As Integer
     End Function
@@ -29,10 +29,10 @@ Public Class gdkForm
     End Structure
 #End Region
 
-#Region "WndProc Redimensionar/Sombra"
+#Region "WndProc Resize / Shadow"
     Protected Overrides Sub WndProc(ByRef m As Message)
         Select Case m.Msg
-            Case &H85 'Cria sombra (com Aero)
+            Case &H85 'Creates shadow (with Aero)
                 Dim val = 2
                 DwmSetWindowAttribute(Handle, 2, val, 4)
                 Dim Margins As New Margins()
@@ -49,7 +49,7 @@ Public Class gdkForm
     End Sub
 #End Region
 
-#Region "Inicialização/Controles de janela"
+#Region "Initialization / Window controls"
     Public Sub New()
         InitializeComponent()
         Me.MinimumSize = New Size(128, 74)

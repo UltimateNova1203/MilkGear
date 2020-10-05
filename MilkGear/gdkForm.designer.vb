@@ -2,7 +2,7 @@
 Partial Class gdkForm
     Inherits System.Windows.Forms.Form
 
-    'Descartar substituições de formulário para limpar a lista de componentes.
+    'Discard form overrides to clear the list of components.
     <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
@@ -14,12 +14,12 @@ Partial Class gdkForm
         End Try
     End Sub
 
-    'Exigido pelo Windows Form Designer
+    'Required by Windows Form Designer
     Private components As System.ComponentModel.IContainer
 
-    'OBSERVAÇÃO: O procedimento a seguir é exigido pelo Windows Form Designer
-    'Ele pode ser modificado usando o Windows Form Designer.  
-    'Não o modifique usando o editor de códigos.
+    'NOTE: The following procedure is required by Windows Form Designer
+    'It can be modified using Windows Form Designer.
+    'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(gdkForm))

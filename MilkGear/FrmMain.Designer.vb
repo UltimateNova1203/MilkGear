@@ -2,7 +2,7 @@
 Partial Class FrmMain
     Inherits MilkGear.gdkForm
 
-    'Descartar substituições de formulário para limpar a lista de componentes.
+    'Discard form overrides to clear the list of components.
     <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
@@ -11,12 +11,12 @@ Partial Class FrmMain
         MyBase.Dispose(disposing)
     End Sub
 
-    'Exigido pelo Windows Form Designer
+    'Required by Windows Form Designer
     Private components As System.ComponentModel.IContainer
 
-    'OBSERVAÇÃO: O procedimento a seguir é exigido pelo Windows Form Designer
-    'Ele pode ser modificado usando o Windows Form Designer.  
-    'Não o modifique usando o editor de códigos.
+    'NOTE: The following procedure is required by Windows Form Designer
+    'It can be modified using Windows Form Designer.
+    'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMain))
@@ -75,41 +75,45 @@ Partial Class FrmMain
         'BtnExport
         '
         Me.BtnExport.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnExport.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.BtnExport.Location = New System.Drawing.Point(456, 2)
         Me.BtnExport.Name = "BtnExport"
         Me.BtnExport.Size = New System.Drawing.Size(64, 24)
         Me.BtnExport.TabIndex = 19
-        Me.BtnExport.Text = "&Exportar"
+        Me.BtnExport.Text = "&Export"
         Me.BtnExport.UseVisualStyleBackColor = True
         '
         'BtnImport
         '
         Me.BtnImport.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnImport.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.BtnImport.Location = New System.Drawing.Point(526, 2)
         Me.BtnImport.Name = "BtnImport"
         Me.BtnImport.Size = New System.Drawing.Size(64, 24)
         Me.BtnImport.TabIndex = 20
-        Me.BtnImport.Text = "&Importar"
+        Me.BtnImport.Text = "&Import"
         Me.BtnImport.UseVisualStyleBackColor = True
         '
         'BtnSave
         '
         Me.BtnSave.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnSave.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.BtnSave.Location = New System.Drawing.Point(402, 2)
         Me.BtnSave.Name = "BtnSave"
         Me.BtnSave.Size = New System.Drawing.Size(48, 24)
         Me.BtnSave.TabIndex = 18
-        Me.BtnSave.Text = "&Salvar"
+        Me.BtnSave.Text = "&Save"
         Me.BtnSave.UseVisualStyleBackColor = True
         '
         'BtnOpen
         '
         Me.BtnOpen.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnOpen.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.BtnOpen.Location = New System.Drawing.Point(348, 2)
         Me.BtnOpen.Name = "BtnOpen"
         Me.BtnOpen.Size = New System.Drawing.Size(48, 24)
         Me.BtnOpen.TabIndex = 17
-        Me.BtnOpen.Text = "&Abrir"
+        Me.BtnOpen.Text = "&Open"
         Me.BtnOpen.UseVisualStyleBackColor = True
         '
         'FrmMain

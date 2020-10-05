@@ -7,7 +7,7 @@ Public Class FrmMain
 
     Dim Plain_Method As Boolean
     Private Sub FrmMain_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
-        If e.KeyCode = Keys.M Then 'Maximiza
+        If e.KeyCode = Keys.M Then 'Maximize
             Me.MaximumSize = Screen.PrimaryScreen.WorkingArea.Size
             If Me.WindowState = FormWindowState.Maximized Then Me.WindowState = FormWindowState.Normal Else Me.WindowState = FormWindowState.Maximized
         End If
@@ -54,7 +54,7 @@ Public Class FrmMain
 
     Private Sub BtnOpen_Click(sender As Object, e As EventArgs) Handles BtnOpen.Click
         Dim OpenDlg As New OpenFileDialog
-        OpenDlg.Filter = "Textura do MGS3|*.ctxr"
+        OpenDlg.Filter = "MGS HD Texture |*.ctxr"
         If OpenDlg.ShowDialog = DialogResult.OK AndAlso File.Exists(OpenDlg.FileName) Then
             Open(OpenDlg.FileName)
             PicPanel.Focus()
@@ -124,14 +124,14 @@ Public Class FrmMain
         End If
 
         File.WriteAllBytes(File_Name, Out)
-        MessageBox.Show("O arquivo foi alterado com sucesso!", "Feito", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        MessageBox.Show("The file was successfully changed!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 
     Private Sub BtnExport_Click(sender As Object, e As EventArgs) Handles BtnExport.Click
         If Not Has_Open_File Then Exit Sub
 
         Dim SaveDlg As New SaveFileDialog
-        SaveDlg.Filter = "Imagem|*.png"
+        SaveDlg.Filter = "Image|*.png"
         SaveDlg.FileName = Path.GetFileNameWithoutExtension(File_Name)
         If SaveDlg.ShowDialog = DialogResult.OK Then
             Preview.Image.Save(SaveDlg.FileName)
@@ -141,7 +141,7 @@ Public Class FrmMain
         If Not Has_Open_File Then Exit Sub
 
         Dim OpenDlg As New OpenFileDialog
-        OpenDlg.Filter = "Imagem|*.png;*.bmp;*.gif;*.jpg;*.tiff"
+        OpenDlg.Filter = "Image|*.png;*.bmp;*.gif;*.jpg;*.tiff"
         If OpenDlg.ShowDialog = DialogResult.OK AndAlso File.Exists(OpenDlg.FileName) Then
             Dim Img As New Bitmap(OpenDlg.FileName)
             Preview.Image = Img
